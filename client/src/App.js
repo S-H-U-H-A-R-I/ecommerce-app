@@ -4,6 +4,7 @@ import StoreLayout from "./layouts/StoreLayout.js";
 import AdminLayout from "./layouts/AdminLayout.js";
 import HomePage from "./pages/store/HomePage.js";
 import AdminDashboard from "./pages/admin/AdminDashboard.js";
+import UserManagement from "./pages/admin/UserManagement.js";
 
 
 const App = () => {
@@ -18,6 +19,11 @@ const App = () => {
         <Route path="/admin" element={
           <AdminLayout>
             <AdminDashboard />
+          </AdminLayout>
+        } />
+        <Route path="/admin/users" element={
+          <AdminLayout>
+            <UserManagement />
           </AdminLayout>
         } />
       </Routes>
