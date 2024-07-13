@@ -4,8 +4,8 @@ import { createClient } from "redis";
 import RedisStore from "connect-redis";
 import cors from "cors";
 
-import { AppError, errorHandler } from "../middleware/errorHandler.js";
-import UserRoute from "../routes/users.js";
+import { AppError, errorHandler } from "../middleware/errorMiddleware.js";
+import UserRoute from "../routes/usersRoutes.js";
 
 const app = express();
 
